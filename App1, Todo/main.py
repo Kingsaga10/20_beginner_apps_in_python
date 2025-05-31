@@ -11,7 +11,7 @@ while True:
                 print(item)
         case 'edit':
             for index, item in enumerate(todos, start=1):
-                print(f'{index} -> {item}')
+                print(f'{index}. {item}')
             edit = int(input("enter the index of the item to edit: "))
             if edit in range(1, len(todos)):
                 todos[edit] = input(f'edit {todos[edit]} here: ')
